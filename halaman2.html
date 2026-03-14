@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <title>🎁 Hadiah Lebaran Spesial</title>
+    <title>🎁 Pesan Dari Pak Amba</title>
     <style>
         * {
             margin: 0;
@@ -11,10 +11,14 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: linear-gradient(145deg, #1a1e2b, #252b3d);
+        html, body {
+            width: 100%;
             min-height: 100vh;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            background: linear-gradient(145deg, #1a1e2b, #252b3d);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -24,31 +28,39 @@
         .card {
             max-width: 900px;
             width: 100%;
-            background: rgba(255, 255, 255, 0.07);
+            background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            border: 2px solid rgba(255, 215, 0, 0.3);
-            border-radius: 50px;
-            padding: 40px;
+            border: 2px solid rgba(255, 215, 0, 0.4);
+            border-radius: 60px;
+            padding: 50px 40px;
             text-align: center;
-            box-shadow: 0 30px 50px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 40px 60px rgba(0, 0, 0, 0.7);
         }
 
         h2 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             color: #ffd700;
             margin-bottom: 30px;
-            text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
             letter-spacing: 2px;
+            line-height: 1.3;
+        }
+
+        .message-from {
+            font-size: 1.3rem;
+            color: #aaa;
+            margin-bottom: 20px;
+            font-style: italic;
         }
 
         .video-wrapper {
             background: #000;
             border-radius: 40px;
             overflow: hidden;
-            margin: 25px 0;
+            margin: 30px 0;
             border: 4px solid #ffd700;
-            box-shadow: 0 0 40px rgba(255, 215, 0, 0.3);
+            box-shadow: 0 0 50px rgba(255, 215, 0, 0.4);
         }
 
         video {
@@ -59,18 +71,21 @@
         }
 
         .info-text {
-            color: #aaa;
-            margin: 20px 0 10px;
-            font-size: 1.1rem;
-            font-style: italic;
+            color: #ddd;
+            margin: 25px 0 15px;
+            font-size: 1.2rem;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 12px 20px;
+            border-radius: 50px;
+            display: inline-block;
         }
 
         .footer {
-            margin-top: 30px;
-            color: #666;
-            font-size: 0.9rem;
-            border-top: 1px solid rgba(255, 215, 0, 0.3);
-            padding-top: 20px;
+            margin-top: 40px;
+            color: #888;
+            font-size: 1rem;
+            border-top: 2px solid rgba(255, 215, 0, 0.3);
+            padding-top: 25px;
         }
 
         .footer span {
@@ -78,52 +93,31 @@
             font-weight: bold;
         }
 
-        /* Jumpscare effect */
-        .jumpscare-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #ff0000;
-            z-index: 9999;
-            animation: flash 0.15s infinite;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        @keyframes flash {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-
-        .jumpscare-overlay img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-        }
-
         /* Responsive */
         @media (max-width: 600px) {
-            .card { padding: 25px; }
-            h2 { font-size: 1.8rem; }
+            .card { padding: 30px 20px; }
+            h2 { font-size: 2rem; }
+            .message-from { font-size: 1.1rem; }
+            .info-text { font-size: 1rem; }
         }
     </style>
 </head>
 <body>
     <div class="card">
-        <h2>🎁 Pesan Dari Pak amba, dengarkan dulu baru dapat THR</h2>
+        <h2>🎁 Pesan Dari Pak Amba</h2>
+        <div class="message-from">dengarkan dulu baru dapat THR</div>
         
         <div class="video-wrapper">
-            <!-- 🔴 GANTI 'video_lo.mp4' dengan nama file video lo -->
+            <!-- 🔴 GANTI DENGAN NAMA FILE VIDEO LO -->
             <video id="myVideo" controls>
                 <source src="video_lo.mp4" type="video/mp4">
                 Browser tidak support video.
             </video>
         </div>
 
-        <p class="info-text">⏳ Video akan habis otomatis...</p>
+        <div class="info-text">
+            ⏳ <span id="timer">0:00 / 0:15</span> ⏳
+        </div>
 
         <div class="footer">
             © <span>VoidTeam</span> • 1446 H
@@ -138,16 +132,31 @@
         const video = document.getElementById('myVideo');
         let videoPlayed = false;
 
-        // ========== FUNGSI JUMPScare ==========
+        // ========== UPDATE TIMER ==========
+        const timerEl = document.getElementById('timer');
+        
+        video.addEventListener('timeupdate', function() {
+            const current = formatTime(video.currentTime);
+            const duration = formatTime(video.duration || 15);
+            timerEl.textContent = `${current} / ${duration}`;
+        });
+
+        function formatTime(seconds) {
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${mins}:${secs.toString().padStart(2, '0')}`;
+        }
+
+        // ========== FUNGSI REDIRECT ==========
         function triggerRedirect() {
             // Efek geter
             for (let i = 0; i < 5; i++) {
                 setTimeout(() => {
-                    window.scrollBy(20 * (i % 2 === 0 ? 1 : -1), 20 * (i % 2 === 0 ? 1 : -1));
-                }, i * 80);
+                    window.scrollBy(15 * (i % 2 === 0 ? 1 : -1), 15 * (i % 2 === 0 ? 1 : -1));
+                }, i * 70);
             }
 
-            // Langsung redirect
+            // Redirect
             setTimeout(() => {
                 window.location.href = TARGET_URL;
             }, 300);
@@ -158,12 +167,10 @@
             videoPlayed = true;
         });
 
-        // Pas video abis → langsung redirect
         video.addEventListener('ended', function() {
             triggerRedirect();
         });
 
-        // Kalo dijeda sebelum abis → langsung redirect juga
         video.addEventListener('pause', function() {
             if (videoPlayed && video.currentTime < video.duration - 1) {
                 triggerRedirect();
