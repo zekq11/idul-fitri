@@ -1,161 +1,1841 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Selamat Idul Fitri 1446 H</title>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="theme-color" content="#43a047">
+    <meta name="description" content="Ucapan Selamat Idul Fitri 1446 H - Desain Mewah dengan Animasi Super Halus">
+    <meta property="og:title" content="Selamat Idul Fitri 1446 H">
+    <meta property="og:description" content="Momen penuh berkah untuk saling memaafkan">
+    <meta property="og:image" content="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%2343a047'/><text x='50' y='65' font-size='50' text-anchor='middle' fill='%23ffd700'>🌙</text></svg>">
+    <title>✨ Idul Fitri 1446 H - Karya Digital VoidTeam</title>
+    
+    <!-- Fonts Premium -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 (untuk ikon premium) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* ============================================
+           CSS RESET MODERN - LINE 1-50
+           ============================================ */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-        margin: 0;
-        font-family: 'Poppins', sans-serif;
-        background: linear-gradient(to bottom, #065f46, #034d36);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        color: #f1f5f9;
-        padding: 20px;
-    }
+        /* ============================================
+           VARIABEL CSS PREMIUM - LINE 50-150
+           ============================================ */
+        :root {
+            /* Primary Colors - Hijau Islami */
+            --green-deep: #1b5e20;
+            --green-medium: #2e7d32;
+            --green-soft: #43a047;
+            --green-light: #66bb6a;
+            --green-pale: #a5d6a7;
+            --green-ultra-light: #c8e6c9;
+            --green-glass: rgba(67, 160, 71, 0.2);
+            
+            /* Gold/Emas Colors */
+            --gold-deep: #b8860b;
+            --gold-medium: #d4af37;
+            --gold-soft: #ffd700;
+            --gold-light: #ffe082;
+            --gold-ultra-light: #ffecb3;
+            --gold-glass: rgba(255, 215, 0, 0.15);
+            
+            /* Orange/Amber Colors */
+            --orange-deep: #d32f2f;
+            --orange-medium: #f44336;
+            --orange-soft: #f4511e;
+            --orange-light: #ff7043;
+            --orange-ultra-light: #ffab91;
+            
+            /* Neutral Colors */
+            --white: #ffffff;
+            --white-soft: #fefefe;
+            --white-glass: rgba(255, 255, 255, 0.1);
+            --white-glass-heavy: rgba(255, 255, 255, 0.2);
+            --black-soft: #2c3e50;
+            --black-light: #34495e;
+            
+            /* Shadows */
+            --shadow-sm: 0 4px 8px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 8px 16px rgba(0, 0, 0, 0.15);
+            --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.2);
+            --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.25);
+            --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+            --shadow-glow-green: 0 0 20px rgba(67, 160, 71, 0.4);
+            --shadow-glow-gold: 0 0 20px rgba(255, 215, 0, 0.4);
+            --shadow-glow-orange: 0 0 20px rgba(244, 81, 30, 0.4);
+            
+            /* Gradients */
+            --gradient-green: linear-gradient(135deg, var(--green-soft), var(--green-medium), var(--green-deep));
+            --gradient-green-reverse: linear-gradient(45deg, var(--green-deep), var(--green-medium), var(--green-soft));
+            --gradient-gold: linear-gradient(135deg, var(--gold-soft), var(--gold-medium), var(--gold-deep));
+            --gradient-orange: linear-gradient(135deg, var(--orange-light), var(--orange-medium), var(--orange-deep));
+            --gradient-sunset: linear-gradient(145deg, #ff8a5c, #f44336, #d32f2f);
+            --gradient-moonlight: linear-gradient(145deg, #1e3c72, #2a5298, #4b6cb7);
+            
+            /* Border Radius */
+            --radius-sm: 8px;
+            --radius-md: 15px;
+            --radius-lg: 20px;
+            --radius-xl: 25px;
+            --radius-xxl: 40px;
+            --radius-circle: 50%;
+            --radius-pill: 50px;
+            
+            /* Spacing */
+            --space-xs: 4px;
+            --space-sm: 8px;
+            --space-md: 12px;
+            --space-lg: 16px;
+            --space-xl: 20px;
+            --space-xxl: 24px;
+            --space-xxxl: 30px;
+            --space-xxxxl: 40px;
+            
+            /* Typography */
+            --font-arabic: 'Amiri', 'Scheherazade New', serif;
+            --font-primary: 'Poppins', sans-serif;
+            --font-display: 'Playfair Display', serif;
+            
+            /* Animations */
+            --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            
+            /* Z-index layers */
+            --z-background: 0;
+            --z-ornament: 1;
+            --z-content: 2;
+            --z-ui: 3;
+            --z-modal: 4;
+            --z-toast: 5;
+        }
 
-    .card {
-        background: #ffffffdd;
-        border-radius: 25px;
-        max-width: 400px;
-        width: 100%;
-        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-        padding: 30px 30px 40px 30px;
-        text-align: center;
-        position: relative;
-    }
+        /* ============================================
+           KEYFRAMES ANIMASI SUPER LENGKAP - LINE 150-350
+           ============================================ */
+        
+        /* Animasi Floating */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            25% {
+                transform: translateY(-10px) rotate(2deg);
+            }
+            75% {
+                transform: translateY(10px) rotate(-2deg);
+            }
+        }
 
-    .icon-moon-stars {
-        font-size: 60px;
-        color: #fbbf24; /* Yellowish */
-        margin-bottom: 10px;
-        animation: glow 2s ease-in-out infinite alternate;
-    }
+        @keyframes float-reverse {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            25% {
+                transform: translateY(10px) rotate(-2deg);
+            }
+            75% {
+                transform: translateY(-10px) rotate(2deg);
+            }
+        }
 
-    @keyframes glow {
-        from { text-shadow: 0 0 6px #fbbf24, 0 0 14px #fbbf24; }
-        to { text-shadow: 0 0 20px #fbbf24, 0 0 40px #fbbf24; }
-    }
+        @keyframes float-slow {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
 
-    h1 {
-        color: #065f46;
-        font-size: 24px;
-        margin: 10px 0 15px 0;
-        font-weight: 800;
-        text-shadow: 0 2px 3px rgba(0,0,0,0.1);
-    }
+        @keyframes float-fast {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+        }
 
-    .arabic-text {
-        font-size: 22px;
-        font-weight: 600;
-        color: #b45309;
-        margin: 10px 0 5px;
-        direction: rtl;
-        font-family: 'Scheherazade New', serif;
-    }
+        /* Animasi Rotasi */
+        @keyframes rotate-slow {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
 
-    .transliteration {
-        font-style: italic;
-        color: #92400e;
-        font-weight: 600;
-        margin-bottom: 25px;
-        background: #fef3c7;
-        padding: 15px 20px;
-        border-radius: 15px;
-        box-shadow: inset 0 0 10px #d97706;
-    }
+        @keyframes rotate-medium {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(180deg);
+            }
+        }
 
-    .message-box {
-        background: #bbf7d0;
-        color: #166534;
-        border-radius: 20px;
-        padding: 25px 20px;
-        font-size: 16px;
-        line-height: 1.6;
-        margin-bottom: 30px;
-        box-shadow: 0 8px 15px rgba(22, 101, 52,0.3);
-    }
+        @keyframes rotate-fast {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(90deg);
+            }
+        }
 
-    .message-box span.emoji {
-        font-size: 20px;
-        margin: 0 4px;
-        vertical-align: middle;
-    }
+        @keyframes rotate-half {
+            0%, 100% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(180deg);
+            }
+        }
 
-    .cta-button {
-        display: inline-block;
-        background: linear-gradient(45deg, #fb923c, #f97316);
-        color: #064e3b;
-        font-weight: 700;
-        font-size: 18px;
-        padding: 15px 40px;
-        border: none;
-        border-radius: 40px;
-        cursor: pointer;
-        box-shadow: 0 8px 20px rgba(251,147,60,0.6);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        text-decoration: none;
-        user-select: none;
-    }
+        /* Animasi Pulse/Glow */
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 0.9;
+            }
+        }
 
-    .cta-button:hover, .cta-button:focus {
-        transform: scale(1.05);
-        box-shadow: 0 12px 30px rgba(251,147,60,0.9);
-        outline: none;
-    }
+        @keyframes pulse-glow {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 40px rgba(255, 215, 0, 0.6);
+            }
+        }
 
-    footer {
-        font-size: 14px;
-        color: #4b5563;
-        text-align: center;
-        margin-top: 20px;
-    }
+        @keyframes pulse-soft {
+            0%, 100% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
 
-    footer .team {
-        color: #14b8a6;
-        font-weight: 700;
-    }
-</style>
+        @keyframes pulse-hard {
+            0%, 100% {
+                transform: scale(1);
+                filter: brightness(1);
+            }
+            50% {
+                transform: scale(1.1);
+                filter: brightness(1.2);
+            }
+        }
+
+        /* Animasi Fade */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeOutUp {
+            from {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+        }
+
+        /* Animasi Scale */
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes scaleOut {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(0);
+            }
+        }
+
+        @keyframes scalePulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        /* Animasi Slide */
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        /* Animasi Spin */
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin-slow {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Animasi Wobble */
+        @keyframes wobble {
+            0%, 100% {
+                transform: translateX(0) rotate(0deg);
+            }
+            15% {
+                transform: translateX(-10px) rotate(-5deg);
+            }
+            30% {
+                transform: translateX(10px) rotate(5deg);
+            }
+            45% {
+                transform: translateX(-8px) rotate(-4deg);
+            }
+            60% {
+                transform: translateX(8px) rotate(4deg);
+            }
+            75% {
+                transform: translateX(-5px) rotate(-2deg);
+            }
+            90% {
+                transform: translateX(5px) rotate(2deg);
+            }
+        }
+
+        /* Animasi Shake */
+        @keyframes shake {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            10%, 30%, 50%, 70%, 90% {
+                transform: translateX(-5px);
+            }
+            20%, 40%, 60%, 80% {
+                transform: translateX(5px);
+            }
+        }
+
+        /* Animasi Khusus */
+        @keyframes starTwinkle {
+            0%, 100% {
+                opacity: 0.2;
+                transform: scale(0.8);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.2);
+            }
+        }
+
+        @keyframes moonGlow {
+            0%, 100% {
+                filter: drop-shadow(0 0 10px #ffd700);
+            }
+            50% {
+                filter: drop-shadow(0 0 30px #ffd700);
+            }
+        }
+
+        @keyframes ketupatSpin {
+            0% {
+                transform: rotate(0deg) scale(1);
+            }
+            50% {
+                transform: rotate(180deg) scale(1.1);
+            }
+            100% {
+                transform: rotate(360deg) scale(1);
+            }
+        }
+
+        @keyframes arabicGlow {
+            0%, 100% {
+                text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffaa00;
+            }
+            50% {
+                text-shadow: 0 0 20px #ffd700, 0 0 40px #ffaa00, 0 0 60px #ff8c00;
+            }
+        }
+
+        @keyframes buttonPulse {
+            0%, 100% {
+                box-shadow: 0 10px 25px rgba(244, 81, 30, 0.5);
+                transform: scale(1);
+            }
+            50% {
+                box-shadow: 0 20px 40px rgba(244, 81, 30, 0.8);
+                transform: scale(1.05);
+            }
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: -200% center;
+            }
+            100% {
+                background-position: 200% center;
+            }
+        }
+
+        @keyframes borderPulse {
+            0%, 100% {
+                border-color: rgba(255, 215, 0, 0.3);
+            }
+            50% {
+                border-color: rgba(255, 215, 0, 0.8);
+            }
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes particleFloat {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+            20% {
+                opacity: 0.8;
+            }
+            80% {
+                opacity: 0.6;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes cardEntrance {
+            0% {
+                opacity: 0;
+                transform: scale(0.8) rotate(-2deg) translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) rotate(0) translateY(0);
+            }
+        }
+
+        /* ============================================
+           STYLING UTAMA - LINE 350-600
+           ============================================ */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: var(--gradient-green);
+            font-family: var(--font-primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: var(--white-soft);
+            position: relative;
+            overflow-x: hidden;
+            padding: 20px;
+            animation: fadeIn 1.5s ease-out;
+            background-size: 200% 200%;
+            animation: gradientShift 15s ease infinite;
+        }
+
+        /* ============================================
+           BACKGROUND ORNAMENTS SUPER DETAIL - LINE 600-800
+           ============================================ */
+        
+        /* Particle Background */
+        .particle-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: var(--z-background);
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 50%;
+            animation: particleFloat 15s linear infinite;
+            opacity: 0;
+        }
+
+        .particle:nth-child(1) { left: 10%; animation-delay: 0s; width: 3px; height: 3px; background: #ffd700; }
+        .particle:nth-child(2) { left: 20%; animation-delay: 2s; width: 5px; height: 5px; background: #ffaa00; }
+        .particle:nth-child(3) { left: 30%; animation-delay: 4s; width: 4px; height: 4px; background: #ff8c00; }
+        .particle:nth-child(4) { left: 40%; animation-delay: 1s; width: 6px; height: 6px; background: #ffd700; }
+        .particle:nth-child(5) { left: 50%; animation-delay: 3s; width: 3px; height: 3px; background: #ffaa00; }
+        .particle:nth-child(6) { left: 60%; animation-delay: 5s; width: 5px; height: 5px; background: #ff8c00; }
+        .particle:nth-child(7) { left: 70%; animation-delay: 0.5s; width: 4px; height: 4px; background: #ffd700; }
+        .particle:nth-child(8) { left: 80%; animation-delay: 2.5s; width: 6px; height: 6px; background: #ffaa00; }
+        .particle:nth-child(9) { left: 90%; animation-delay: 3.5s; width: 3px; height: 3px; background: #ff8c00; }
+        .particle:nth-child(10) { left: 95%; animation-delay: 1.5s; width: 5px; height: 5px; background: #ffd700; }
+        .particle:nth-child(11) { left: 15%; animation-delay: 4.5s; width: 4px; height: 4px; background: #ffaa00; }
+        .particle:nth-child(12) { left: 25%; animation-delay: 0.2s; width: 6px; height: 6px; background: #ff8c00; }
+        .particle:nth-child(13) { left: 35%; animation-delay: 1.2s; width: 3px; height: 3px; background: #ffd700; }
+        .particle:nth-child(14) { left: 45%; animation-delay: 2.2s; width: 5px; height: 5px; background: #ffaa00; }
+        .particle:nth-child(15) { left: 55%; animation-delay: 3.2s; width: 4px; height: 4px; background: #ff8c00; }
+        .particle:nth-child(16) { left: 65%; animation-delay: 4.2s; width: 6px; height: 6px; background: #ffd700; }
+        .particle:nth-child(17) { left: 75%; animation-delay: 0.8s; width: 3px; height: 3px; background: #ffaa00; }
+        .particle:nth-child(18) { left: 85%; animation-delay: 1.8s; width: 5px; height: 5px; background: #ff8c00; }
+        .particle:nth-child(19) { left: 92%; animation-delay: 2.8s; width: 4px; height: 4px; background: #ffd700; }
+        .particle:nth-child(20) { left: 98%; animation-delay: 3.8s; width: 6px; height: 6px; background: #ffaa00; }
+
+        /* Ketupat Ornaments */
+        .ketupat-ornament {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: var(--gold-glass);
+            transform: rotate(45deg);
+            border-radius: var(--radius-xxl);
+            pointer-events: none;
+            z-index: var(--z-ornament);
+            animation: ketupatSpin 30s linear infinite;
+        }
+
+        .ketupat-ornament::before {
+            content: '🔸';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-size: 3rem;
+            color: var(--gold-soft);
+            opacity: 0.5;
+            animation: pulse-soft 3s ease-in-out infinite;
+        }
+
+        .ketupat-ornament-1 {
+            top: -80px;
+            right: -80px;
+            background: rgba(255, 215, 0, 0.08);
+        }
+
+        .ketupat-ornament-2 {
+            bottom: -80px;
+            left: -80px;
+            top: auto;
+            right: auto;
+            background: rgba(255, 215, 0, 0.05);
+            animation-direction: reverse;
+            animation-duration: 25s;
+        }
+
+        .ketupat-ornament-3 {
+            top: 30%;
+            left: -100px;
+            width: 150px;
+            height: 150px;
+            background: rgba(255, 215, 0, 0.06);
+            animation-duration: 35s;
+        }
+
+        .ketupat-ornament-4 {
+            bottom: 20%;
+            right: -100px;
+            width: 150px;
+            height: 150px;
+            background: rgba(255, 215, 0, 0.06);
+            animation-duration: 40s;
+            animation-direction: reverse;
+        }
+
+        /* Star Ornaments */
+        .star-ornament {
+            position: absolute;
+            font-size: 2rem;
+            color: rgba(255, 255, 255, 0.3);
+            pointer-events: none;
+            z-index: var(--z-ornament);
+            animation: starTwinkle 4s ease-in-out infinite;
+        }
+
+        .star-ornament-1 {
+            top: 15%;
+            left: 10%;
+            font-size: 2.5rem;
+            animation-delay: 0s;
+        }
+
+        .star-ornament-2 {
+            top: 20%;
+            right: 15%;
+            font-size: 3rem;
+            animation-delay: 1s;
+        }
+
+        .star-ornament-3 {
+            bottom: 25%;
+            left: 12%;
+            font-size: 2.2rem;
+            animation-delay: 2s;
+        }
+
+        .star-ornament-4 {
+            bottom: 30%;
+            right: 18%;
+            font-size: 2.8rem;
+            animation-delay: 1.5s;
+        }
+
+        /* Moon Ornament */
+        .moon-ornament {
+            position: absolute;
+            top: 10%;
+            right: 10%;
+            font-size: 5rem;
+            color: var(--gold-soft);
+            filter: drop-shadow(0 0 30px var(--gold-soft));
+            animation: moonGlow 4s ease-in-out infinite, float-slow 6s ease-in-out infinite;
+            z-index: var(--z-ornament);
+            opacity: 0.8;
+        }
+
+        .moon-ornament-2 {
+            bottom: 10%;
+            left: 10%;
+            font-size: 4rem;
+            color: var(--gold-light);
+            filter: drop-shadow(0 0 20px var(--gold-light));
+            animation: moonGlow 5s ease-in-out infinite reverse, float-reverse 7s ease-in-out infinite;
+            opacity: 0.6;
+        }
+
+        /* ============================================
+           CONTAINER UTAMA PREMIUM - LINE 800-1000
+           ============================================ */
+        .main-container {
+            position: relative;
+            z-index: var(--z-content);
+            width: 100%;
+            max-width: 700px;
+            animation: cardEntrance 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        .glass-card {
+            background: var(--white-glass);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: var(--radius-xxl);
+            padding: var(--space-xxxxl) var(--space-xxxl);
+            width: 100%;
+            box-shadow: var(--shadow-xl), 0 0 0 2px var(--gold-glass), var(--shadow-glow-green);
+            text-align: center;
+            border: 1px solid var(--white-glass-heavy);
+            transition: var(--transition-normal);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 200%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            animation: shimmer 8s infinite;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .glass-card::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at center, rgba(255, 215, 0, 0.1), transparent 70%);
+            animation: rotate-slow 30s linear infinite;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* ============================================
+           IKON BULAN SUPER PREMIUM - LINE 1000-1100
+           ============================================ */
+        .icon-moon-wrapper {
+            position: relative;
+            display: inline-block;
+            margin-bottom: var(--space-xl);
+            animation: float-slow 5s ease-in-out infinite;
+        }
+
+        .icon-moon {
+            font-size: 80px;
+            color: var(--gold-soft);
+            margin-bottom: var(--space-lg);
+            text-shadow: 0 0 30px var(--gold-soft), 0 0 60px var(--gold-medium);
+            position: relative;
+            display: inline-block;
+            animation: moonGlow 3s ease-in-out infinite;
+            filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+        }
+
+        .icon-moon::before {
+            content: '✨';
+            position: absolute;
+            top: -20px;
+            right: -30px;
+            font-size: 40px;
+            animation: starTwinkle 2s ease-in-out infinite;
+            transform-origin: center;
+        }
+
+        .icon-moon::after {
+            content: '✨';
+            position: absolute;
+            bottom: -10px;
+            left: -30px;
+            font-size: 35px;
+            animation: starTwinkle 2.5s ease-in-out infinite reverse;
+            transform-origin: center;
+        }
+
+        .stars-small {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .stars-small span {
+            position: absolute;
+            color: var(--gold-light);
+            font-size: 1.2rem;
+            animation: starTwinkle 3s ease-in-out infinite;
+        }
+
+        .stars-small span:nth-child(1) { top: 10%; left: 10%; animation-delay: 0s; }
+        .stars-small span:nth-child(2) { top: 20%; right: 15%; animation-delay: 0.5s; }
+        .stars-small span:nth-child(3) { bottom: 15%; left: 20%; animation-delay: 1s; }
+        .stars-small span:nth-child(4) { bottom: 25%; right: 10%; animation-delay: 1.5s; }
+
+        /* ============================================
+           TYPOGRAPHY PREMIUM - LINE 1100-1200
+           ============================================ */
+        h1 {
+            font-weight: 700;
+            margin-bottom: var(--space-xxl);
+            font-size: 2.2rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3), 0 0 20px var(--green-light);
+            line-height: 1.4;
+            position: relative;
+            display: inline-block;
+            font-family: var(--font-display);
+            background: linear-gradient(135deg, var(--white), var(--gold-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        h1::before,
+        h1::after {
+            content: '🌙';
+            position: absolute;
+            font-size: 1.5rem;
+            color: var(--gold-soft);
+            animation: float-slow 3s ease-in-out infinite;
+            opacity: 0.7;
+        }
+
+        h1::before {
+            left: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        h1::after {
+            right: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* ============================================
+           ARABIC TEXT SUPER ELEGAN - LINE 1200-1300
+           ============================================ */
+        .arabic-text {
+            font-size: 2rem;
+            color: var(--gold-light);
+            font-family: var(--font-arabic);
+            margin: var(--space-xl) 0 var(--space-lg);
+            text-shadow: 0 0 15px var(--gold-soft), 0 0 30px var(--gold-medium);
+            line-height: 1.6;
+            background: rgba(0, 0, 0, 0.2);
+            padding: var(--space-xxl) var(--space-xxxl);
+            border-radius: var(--radius-xxl);
+            display: inline-block;
+            border-left: 3px solid var(--gold-soft);
+            border-right: 3px solid var(--gold-soft);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: arabicGlow 3s ease-in-out infinite, fadeInScale 1.2s ease-out;
+            font-weight: 700;
+            letter-spacing: 2px;
+            position: relative;
+            backdrop-filter: blur(5px);
+        }
+
+        .arabic-text::before,
+        .arabic-text::after {
+            content: '✦';
+            position: absolute;
+            font-size: 1.8rem;
+            color: var(--gold-soft);
+            animation: spin-slow 10s linear infinite;
+        }
+
+        .arabic-text::before {
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .arabic-text::after {
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* ============================================
+           TRANSLITERASI PREMIUM - LINE 1300-1400
+           ============================================ */
+        .translit-wrapper {
+            position: relative;
+            display: inline-block;
+            margin-bottom: var(--space-xxxl);
+        }
+
+        .translit {
+            background: linear-gradient(135deg, var(--gold-ultra-light), var(--gold-light));
+            display: inline-block;
+            padding: var(--space-lg) var(--space-xxl);
+            border-radius: var(--radius-pill);
+            color: var(--green-deep);
+            font-weight: 700;
+            font-style: italic;
+            box-shadow: var(--shadow-lg), 0 0 20px var(--gold-soft);
+            margin-bottom: var(--space-xl);
+            font-size: 1.1rem;
+            border: 1px solid var(--gold-soft);
+            position: relative;
+            animation: pulse-glow 3s ease-in-out infinite;
+            letter-spacing: 1px;
+        }
+
+        .translit::before,
+        .translit::after {
+            content: '❤️';
+            position: absolute;
+            font-size: 1rem;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .translit::before {
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .translit::after {
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* ============================================
+           MESSAGE BOX SUPER MEWAH - LINE 1400-1500
+           ============================================ */
+        .message-box {
+            background: linear-gradient(145deg, var(--green-pale), var(--green-light));
+            color: var(--green-deep);
+            border-radius: var(--radius-xxl);
+            padding: var(--space-xxxl) var(--space-xxl);
+            font-size: 1.2rem;
+            line-height: 1.9;
+            box-shadow: var(--shadow-lg), 0 0 30px var(--green-soft);
+            margin-bottom: var(--space-xxxl);
+            border: 2px solid var(--gold-soft);
+            transition: var(--transition-normal);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(5px);
+            animation: fadeInScale 1.3s ease-out;
+        }
+
+        .message-box:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: var(--shadow-xl), 0 0 40px var(--green-soft);
+            border-color: var(--gold-medium);
+        }
+
+        .message-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at center, rgba(255, 215, 0, 0.1), transparent 70%);
+            animation: rotate-slow 20s linear infinite;
+            pointer-events: none;
+        }
+
+        .message-box p {
+            margin: var(--space-lg) 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .message-box .emoji-line {
+            font-size: 2rem;
+            margin: var(--space-xl) 0;
+            animation: float-slow 4s ease-in-out infinite;
+        }
+
+        .message-box .emoji-line span {
+            display: inline-block;
+            animation: pulse-soft 2s ease-in-out infinite;
+            margin: 0 var(--space-xs);
+        }
+
+        .message-box .emoji-line span:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        .message-box .emoji-line span:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        .message-box .emoji-line span:nth-child(4) {
+            animation-delay: 0.9s;
+        }
+
+        .message-box .emoji-line span:nth-child(5) {
+            animation-delay: 1.2s;
+        }
+
+        /* ============================================
+           BUTTON THR SUPER PREMIUM - LINE 1500-1600
+           ============================================ */
+        .button-wrapper {
+            position: relative;
+            width: 100%;
+            margin: var(--space-xxl) 0;
+            animation: fadeInUp 1.4s ease-out;
+        }
+
+        .btn-thr {
+            background: var(--gradient-orange);
+            color: var(--white);
+            font-weight: 800;
+            font-size: 1.3rem;
+            border: none;
+            padding: var(--space-xl) var(--space-xxl);
+            width: 100%;
+            border-radius: var(--radius-pill);
+            cursor: pointer;
+            box-shadow: var(--shadow-lg), 0 0 30px var(--orange-soft);
+            transition: var(--transition-bounce);
+            letter-spacing: 0.06em;
+            position: relative;
+            overflow: hidden;
+            animation: buttonPulse 2s ease-in-out infinite;
+            text-transform: uppercase;
+            border: 2px solid var(--gold-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-md);
+        }
+
+        .btn-thr::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: var(--transition-normal);
+            animation: shimmer 3s infinite;
+        }
+
+        .btn-thr:hover {
+            background: linear-gradient(145deg, #f44336, #d32f2f);
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: var(--shadow-xl), 0 0 40px var(--orange-medium);
+            letter-spacing: 0.1em;
+        }
+
+        .btn-thr:hover::before {
+            left: 100%;
+        }
+
+        .btn-thr:active {
+            transform: translateY(-2px) scale(0.98);
+            box-shadow: var(--shadow-md), 0 0 20px var(--orange-deep);
+        }
+
+        .btn-thr i {
+            font-size: 1.5rem;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .btn-thr span {
+            position: relative;
+            z-index: 2;
+        }
+
+        .btn-thr .sparkle {
+            position: absolute;
+            font-size: 1rem;
+            opacity: 0.5;
+            animation: starTwinkle 2s ease-in-out infinite;
+        }
+
+        .btn-thr .sparkle-1 {
+            top: 10px;
+            left: 20px;
+        }
+
+        .btn-thr .sparkle-2 {
+            bottom: 10px;
+            right: 20px;
+            animation-delay: 0.5s;
+        }
+
+        .btn-thr .sparkle-3 {
+            top: 50%;
+            left: 30px;
+            transform: translateY(-50%);
+            animation-delay: 1s;
+        }
+
+        /* ============================================
+           CREDIT SECTION - LINE 1600-1700
+           ============================================ */
+        .credit-wrapper {
+            position: relative;
+            margin-top: var(--space-xxl);
+            padding-top: var(--space-lg);
+            border-top: 2px dashed var(--gold-glass);
+            animation: fadeIn 2s ease-out;
+        }
+
+        .credit {
+            font-size: 0.95rem;
+            color: var(--green-ultra-light);
+            letter-spacing: 0.04em;
+            font-weight: 400;
+            text-transform: uppercase;
+            background: rgba(0, 0, 0, 0.2);
+            padding: var(--space-md) var(--space-xl);
+            border-radius: var(--radius-pill);
+            display: inline-block;
+            backdrop-filter: blur(5px);
+            border: 1px solid var(--gold-glass);
+            transition: var(--transition-normal);
+        }
+
+        .credit:hover {
+            background: rgba(0, 0, 0, 0.3);
+            border-color: var(--gold-soft);
+            color: var(--white);
+            transform: scale(1.02);
+            letter-spacing: 0.06em;
+        }
+
+        .credit i {
+            margin: 0 var(--space-xs);
+            color: var(--gold-soft);
+            animation: pulse-soft 2s ease-in-out infinite;
+        }
+
+        .credit-year {
+            font-weight: 700;
+            color: var(--gold-soft);
+            font-size: 1.1rem;
+        }
+
+        .credit-void {
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--gold-soft), var(--gold-deep));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* ============================================
+           TOAST NOTIFICATION - LINE 1700-1750
+           ============================================ */
+        .toast-notification {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--gradient-gold);
+            color: var(--green-deep);
+            padding: var(--space-lg) var(--space-xxl);
+            border-radius: var(--radius-pill);
+            font-weight: 700;
+            box-shadow: var(--shadow-xl);
+            transform: translateX(400px);
+            transition: var(--transition-bounce);
+            z-index: var(--z-toast);
+            border: 2px solid var(--white);
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+        }
+
+        .toast-notification.show {
+            transform: translateX(0);
+        }
+
+        .toast-notification i {
+            font-size: 1.5rem;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        /* ============================================
+           MEDIA QUERIES RESPONSIF - LINE 1750-1850
+           ============================================ */
+        @media (max-width: 700px) {
+            .glass-card {
+                padding: var(--space-xxxl) var(--space-xl);
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h1::before,
+            h1::after {
+                display: none;
+            }
+
+            .arabic-text {
+                font-size: 1.6rem;
+                padding: var(--space-lg) var(--space-xl);
+            }
+
+            .message-box {
+                font-size: 1rem;
+                padding: var(--space-xl);
+            }
+
+            .btn-thr {
+                font-size: 1.1rem;
+                padding: var(--space-lg) var(--space-xl);
+            }
+
+            .icon-moon {
+                font-size: 60px;
+            }
+
+            .moon-ornament,
+            .moon-ornament-2 {
+                display: none;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .glass-card {
+                padding: var(--space-xxl) var(--space-lg);
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .arabic-text {
+                font-size: 1.3rem;
+                padding: var(--space-md) var(--space-lg);
+            }
+
+            .translit {
+                font-size: 0.9rem;
+                padding: var(--space-sm) var(--space-md);
+            }
+
+            .message-box {
+                font-size: 0.95rem;
+                line-height: 1.7;
+            }
+
+            .btn-thr {
+                font-size: 1rem;
+                padding: var(--space-md) var(--space-lg);
+            }
+
+            .credit {
+                font-size: 0.8rem;
+            }
+
+            .toast-notification {
+                left: 20px;
+                right: 20px;
+                bottom: 20px;
+                transform: translateY(200px);
+                font-size: 0.85rem;
+                padding: var(--space-md);
+            }
+
+            .toast-notification.show {
+                transform: translateY(0);
+            }
+
+            .ketupat-ornament-3,
+            .ketupat-ornament-4 {
+                display: none;
+            }
+        }
+
+        @media (max-width: 350px) {
+            h1 {
+                font-size: 1.3rem;
+            }
+
+            .arabic-text {
+                font-size: 1.1rem;
+            }
+
+            .message-box {
+                font-size: 0.85rem;
+                padding: var(--space-md);
+            }
+
+            .btn-thr {
+                font-size: 0.9rem;
+                padding: var(--space-sm) var(--space-md);
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .main-container {
+                max-width: 900px;
+            }
+
+            h1 {
+                font-size: 2.8rem;
+            }
+
+            .arabic-text {
+                font-size: 2.5rem;
+            }
+
+            .message-box {
+                font-size: 1.4rem;
+            }
+
+            .btn-thr {
+                font-size: 1.5rem;
+                padding: var(--space-xxl) var(--space-xxxl);
+            }
+        }
+
+        /* ============================================
+           PRINT STYLES - LINE 1850-1900
+           ============================================ */
+        @media print {
+            body {
+                background: white;
+                padding: 20px;
+            }
+
+            .glass-card {
+                background: white;
+                box-shadow: none;
+                border: 2px solid var(--green-deep);
+            }
+
+            .btn-thr,
+            .particle-container,
+            .ketupat-ornament,
+            .moon-ornament,
+            .star-ornament,
+            .toast-notification {
+                display: none;
+            }
+
+            h1 {
+                -webkit-text-fill-color: var(--green-deep);
+                color: var(--green-deep);
+            }
+
+            .arabic-text {
+                -webkit-text-fill-color: var(--gold-deep);
+                color: var(--gold-deep);
+                text-shadow: none;
+            }
+        }
+
+        /* ============================================
+           ACCESSIBILITY - LINE 1900-1950
+           ============================================ */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+
+        .skip-to-content {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--green-deep);
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 0 0 var(--radius-md) var(--radius-md);
+            z-index: var(--z-modal);
+            transition: var(--transition-fast);
+        }
+
+        .skip-to-content:focus {
+            top: 0;
+        }
+
+        /* ============================================
+           CUSTOM SCROLLBAR - LINE 1950-2000
+           ============================================ */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--green-deep);
+            border-radius: var(--radius-pill);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--gradient-gold);
+            border-radius: var(--radius-pill);
+            border: 2px solid var(--green-deep);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--gradient-orange);
+        }
+
+        ::-webkit-scrollbar-thumb:active {
+            background: var(--orange-deep);
+        }
+
+        /* ============================================
+           SELECTION COLOR - LINE 2000-2020
+           ============================================ */
+        ::selection {
+            background: var(--gold-soft);
+            color: var(--green-deep);
+            text-shadow: none;
+        }
+
+        ::-moz-selection {
+            background: var(--gold-soft);
+            color: var(--green-deep);
+            text-shadow: none;
+        }
+    </style>
 </head>
 <body>
+    <!-- Skip to content link untuk aksesibilitas -->
+    <a href="#main-content" class="skip-to-content">Langsung ke konten utama</a>
 
-<div class="card">
-    <div class="icon-moon-stars" aria-hidden="true">🌙✨🌙</div>
-
-    <h1>Selamat Idul Fitri 1446 H ✨</h1>
-
-    <div class="arabic-text" lang="ar" aria-label="Doa Taqabbalallahu minna wa minkum">
-        تَقَبَّلَ اللّٰهُ مِنّا وَمِنْكُمْ
+    <!-- Background particles -->
+    <div class="particle-container" aria-hidden="true">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
     </div>
-    <div class="transliteration" aria-label="Taqabbalallahu minna wa minkum">
-        Taqabbalallahu minna wa minkum
+
+    <!-- Ketupat ornaments -->
+    <div class="ketupat-ornament ketupat-ornament-1" aria-hidden="true"></div>
+    <div class="ketupat-ornament ketupat-ornament-2" aria-hidden="true"></div>
+    <div class="ketupat-ornament ketupat-ornament-3" aria-hidden="true"></div>
+    <div class="ketupat-ornament ketupat-ornament-4" aria-hidden="true"></div>
+
+    <!-- Star ornaments -->
+    <div class="star-ornament star-ornament-1" aria-hidden="true">⭐</div>
+    <div class="star-ornament star-ornament-2" aria-hidden="true">🌟</div>
+    <div class="star-ornament star-ornament-3" aria-hidden="true">✨</div>
+    <div class="star-ornament star-ornament-4" aria-hidden="true">💫</div>
+
+    <!-- Moon ornaments -->
+    <div class="moon-ornament" aria-hidden="true">🌙</div>
+    <div class="moon-ornament-2" aria-hidden="true">🌕</div>
+
+    <!-- Main container -->
+    <div class="main-container" id="main-content" role="main" aria-label="Ucapan Selamat Idul Fitri">
+        <div class="glass-card">
+            <div class="content">
+                <!-- Stars kecil -->
+                <div class="stars-small" aria-hidden="true">
+                    <span>✨</span>
+                    <span>✨</span>
+                    <span>✨</span>
+                    <span>✨</span>
+                </div>
+
+                <!-- Icon bulan utama -->
+                <div class="icon-moon-wrapper" aria-hidden="true">
+                    <div class="icon-moon">🌙✨</div>
+                </div>
+
+                <!-- Judul utama -->
+                <h1>Selamat Hari Raya<br>Idul Fitri 1446 H</h1>
+
+                <!-- Teks Arab -->
+                <div class="arabic-text" lang="ar" dir="rtl" aria-label="Teks Arab Taqabbalallahu minna wa minkum">
+                    تَقَبَّلَ اللهُ مِنَّا وَمِنكُمْ
+                </div>
+
+                <!-- Transliterasi -->
+                <div class="translit-wrapper">
+                    <div class="translit" aria-label="Taqabbalallahu minna wa minkum">
+                        Taqabbalallāhu minna wa minkum
+                    </div>
+                </div>
+
+                <!-- Kotak pesan -->
+                <div class="message-box" role="region" aria-label="Pesan ucapan Idul Fitri">
+                    <div class="emoji-line">
+                        <span>🌺</span>
+                        <span>🌸</span>
+                        <span>🌼</span>
+                        <span>🌻</span>
+                        <span>🌷</span>
+                    </div>
+                    
+                    <p>🌸 Di momen penuh berkah ini,<br>
+                    mari kita sucikan hati dengan saling memaafkan.</p>
+                    
+                    <p>🙏 Mohon maaf lahir dan batin<br>
+                    atas segala khilaf dan salah yang pernah terjadi.</p>
+                    
+                    <p>❤️ Semoga kebahagiaan dan kedamaian<br>
+                    senantiasa menyertai kita semua.</p>
+                    
+                    <div class="emoji-line">
+                        <span>✨</span>
+                        <span>🌟</span>
+                        <span>⭐</span>
+                        <span>💫</span>
+                        <span>✨</span>
+                    </div>
+                </div>
+
+                <!-- Tombol THR -->
+                <div class="button-wrapper">
+                    <button class="btn-thr" onclick="location.href='halaman2.html'" aria-label="Klik untuk mendapatkan THR Idul Fitri">
+                        <i class="fas fa-gift" aria-hidden="true"></i>
+                        <span>✨ Klik Di sini untuk Dapat THR ✨</span>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <span class="sparkle sparkle-1">✨</span>
+                        <span class="sparkle sparkle-2">✨</span>
+                        <span class="sparkle sparkle-3">✨</span>
+                    </button>
+                </div>
+
+                <!-- Credit section -->
+                <div class="credit-wrapper">
+                    <div class="credit" aria-label="Informasi credit">
+                        <i class="fas fa-copyright" aria-hidden="true"></i>
+                        <span class="credit-year">2024-2026</span>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <span class="credit-void">VoidTeam</span>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <span>Selamat Idul Fitri 1446 H</span>
+                        <i class="fas fa-heart" style="color: #ff6b6b;" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="message-box">
-        <span class="emoji" role="img" aria-label="Bunga">🌺</span> Di hari yang suci ini,<br />
-        mari kita saling memaafkan.<br /><br />
-        <span class="emoji" role="img" aria-label="Berdoa">🙏</span> Mohon maaf lahir dan batin<br />
-        atas segala khilaf dan salah.<br /><br />
-        <span class="emoji" role="img" aria-label="Tersedu dan hati">😭❤️</span>
+    <!-- Audio autoplay (kunci utama) -->
+    <audio autoplay loop id="bgMusic" preload="auto">
+        <source src="lagu_ramadhan.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Toast notification (opsional) -->
+    <div class="toast-notification" id="toast">
+        <i class="fas fa-music" aria-hidden="true"></i>
+        <span>Memutar musik Ramadhan ✨</span>
     </div>
 
-    <a href="halaman2.html" class="cta-button" role="button" aria-label="Klik untuk dapat THR dan lanjut ke halaman kedua">
-        ✨ KLIK DAPAT THR ✨
-    </a>
+    <script>
+        // ============================================
+        // JAVASCRIPT PREMIUM - LINE 1-100
+        // ============================================
+        
+        // Konfigurasi
+        const CONFIG = {
+            AUDIO_VOLUME: 0.7,
+            TOAST_DURATION: 3000,
+            ENABLE_TOAST: true
+        };
 
-    <footer>
-        © <span class="team">VoidTeam</span> · 1446 H / 2026 M
-    </footer>
-</div>
+        // DOM Elements
+        const audio = document.getElementById('bgMusic');
+        const toast = document.getElementById('toast');
 
-<audio id="background-music" src="lagu_ramadhan.mp3" autoplay loop controls style="margin-top: 20px; width: 100%; max-width: 400px; display:block; margin-left:auto; margin-right:auto;">
-    Your browser does not support the audio element.
-</audio>
+        // Set volume
+        audio.volume = CONFIG.AUDIO_VOLUME;
 
+        // ============================================
+        // AUDIO HANDLING - PASTI JALAN!
+        // ============================================
+        
+        // Fungsi untuk memastikan audio auto play
+        function ensureAudioPlay() {
+            audio.play()
+                .then(() => {
+                    console.log('✅ Audio berhasil diputar');
+                    if (CONFIG.ENABLE_TOAST) showToast('Memutar musik Ramadhan ✨', 'success');
+                })
+                .catch(error => {
+                    console.log('❌ Auto play dicegah browser, mencoba lagi...', error);
+                    
+                    // Coba play setelah interaksi user
+                    const playOnInteraction = function() {
+                        audio.play()
+                            .then(() => {
+                                console.log('✅ Audio diputar setelah interaksi');
+                                document.removeEventListener('touchstart', playOnInteraction);
+                                document.removeEventListener('click', playOnInteraction);
+                                if (CONFIG.ENABLE_TOAST) showToast('Musik dimulai! ✨', 'success');
+                            })
+                            .catch(err => console.log('Masih gagal:', err));
+                    };
+
+                    document.addEventListener('touchstart', playOnInteraction, { once: true });
+                    document.addEventListener('click', playOnInteraction, { once: true });
+
+                    // Tampilkan pesan ke user
+                    if (CONFIG.ENABLE_TOAST) {
+                        showToast('🔊 Tekan layar untuk memulai musik', 'info');
+                    }
+                });
+        }
+
+        // Panggil fungsi auto play
+        ensureAudioPlay();
+
+        // ============================================
+        // TOAST NOTIFICATION SYSTEM
+        // ============================================
+        
+        function showToast(message, type = 'info') {
+            if (!toast) return;
+
+            toast.innerHTML = `
+                <i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-info-circle'}" aria-hidden="true"></i>
+                <span>${message}</span>
+            `;
+
+            toast.classList.add('show');
+
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, CONFIG.TOAST_DURATION);
+        }
+
+        // ============================================
+        // ANIMASI TAMBAHAN
+        // ============================================
+        
+        // Animasi untuk ikon bulan
+        const moonIcon = document.querySelector('.icon-moon');
+        if (moonIcon) {
+            moonIcon.addEventListener('mouseenter', () => {
+                moonIcon.style.animation = 'wobble 0.5s ease-in-out';
+                setTimeout(() => {
+                    moonIcon.style.animation = '';
+                }, 500);
+            });
+        }
+
+        // Animasi untuk tombol THR
+        const thrButton = document.querySelector('.btn-thr');
+        if (thrButton) {
+            thrButton.addEventListener('mouseenter', () => {
+                thrButton.style.transform = 'translateY(-8px) scale(1.05)';
+            });
+
+            thrButton.addEventListener('mouseleave', () => {
+                thrButton.style.transform = '';
+            });
+        }
+
+        // ============================================
+        // PRELOAD AUDIO (opsional)
+        // ============================================
+        
+        // Preload audio untuk memastikan siap
+        audio.load();
+
+        // Handle jika audio error
+        audio.addEventListener('error', (e) => {
+            console.error('❌ Error loading audio:', e);
+            if (CONFIG.ENABLE_TOAST) {
+                showToast('⚠️ File lagu_ramadhan.mp3 tidak ditemukan', 'error');
+            }
+        });
+
+        // Audio loaded
+        audio.addEventListener('loadeddata', () => {
+            console.log('✅ Audio loaded successfully');
+        });
+
+        // ============================================
+        // LOADING STATE (opsional)
+        // ============================================
+        
+        window.addEventListener('load', () => {
+            console.log('✅ Halaman loaded, menjalankan animasi...');
+            
+            // Trigger animasi fadeIn
+            document.body.style.animation = 'none';
+            document.body.offsetHeight;
+            document.body.style.animation = 'fadeIn 1.5s ease-out, gradientShift 15s ease infinite';
+        });
+
+        // ============================================
+        // DYNAMIC YEAR (opsional)
+        // ============================================
+        
+        const yearElement = document.querySelector('.credit-year');
+        if (yearElement) {
+            const currentYear = new Date().getFullYear();
+            yearElement.textContent = `2024-${currentYear}`;
+        }
+
+        // ============================================
+        // ERROR HANDLING
+        // ============================================
+        
+        window.addEventListener('error', (e) => {
+            console.error('Global error:', e.message);
+        });
+
+        // ============================================
+        // CLEANUP
+        // ============================================
+        
+        window.addEventListener('beforeunload', () => {
+            audio.pause();
+            audio.currentTime = 0;
+        });
+    </script>
+
+    <!-- Fallback untuk browser yang tidak support audio -->
+    <noscript>
+        <div style="position: fixed; bottom: 20px; left: 20px; background: #ff6b6b; color: white; padding: 10px 20px; border-radius: 50px; font-size: 14px; z-index: 9999;">
+            ⚠️ Browser Anda tidak mendukung JavaScript
+        </div>
+    </noscript>
 </body>
 </html>
