@@ -1,292 +1,161 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <title>✨ Selamat Idul Fitri 1446 H</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Selamat Idul Fitri 1446 H</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-        html, body {
-            width: 100%;
-            min-height: 100vh;
-        }
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(to bottom, #065f46, #034d36);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        color: #f1f5f9;
+        padding: 20px;
+    }
 
-        body {
-            font-family: 'Segoe UI', 'Arial', sans-serif;
-            background: linear-gradient(145deg, #0a4d2e 0%, #1e7b4a 100%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
+    .card {
+        background: #ffffffdd;
+        border-radius: 25px;
+        max-width: 400px;
+        width: 100%;
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+        padding: 30px 30px 40px 30px;
+        text-align: center;
+        position: relative;
+    }
 
-        .card {
-            max-width: 800px;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.98);
-            border-radius: 60px;
-            padding: 50px 40px;
-            text-align: center;
-            box-shadow: 0 40px 60px rgba(0, 0, 0, 0.4), 0 0 0 3px #ffd700 inset;
-            animation: fadeScale 0.8s ease-out;
-            position: relative;
-            overflow: hidden;
-        }
+    .icon-moon-stars {
+        font-size: 60px;
+        color: #fbbf24; /* Yellowish */
+        margin-bottom: 10px;
+        animation: glow 2s ease-in-out infinite alternate;
+    }
 
-        @keyframes fadeScale {
-            0% { opacity: 0; transform: scale(0.9); }
-            100% { opacity: 1; transform: scale(1); }
-        }
+    @keyframes glow {
+        from { text-shadow: 0 0 6px #fbbf24, 0 0 14px #fbbf24; }
+        to { text-shadow: 0 0 20px #fbbf24, 0 0 40px #fbbf24; }
+    }
 
-        .ketupat-ornament {
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            background: rgba(255, 215, 0, 0.08);
-            transform: rotate(45deg);
-            border-radius: 40px;
-            top: -80px;
-            right: -80px;
-            z-index: 0;
-        }
+    h1 {
+        color: #065f46;
+        font-size: 24px;
+        margin: 10px 0 15px 0;
+        font-weight: 800;
+        text-shadow: 0 2px 3px rgba(0,0,0,0.1);
+    }
 
-        .ketupat-ornament2 {
-            bottom: -80px;
-            left: -80px;
-            top: auto;
-            right: auto;
-        }
+    .arabic-text {
+        font-size: 22px;
+        font-weight: 600;
+        color: #b45309;
+        margin: 10px 0 5px;
+        direction: rtl;
+        font-family: 'Scheherazade New', serif;
+    }
 
-        .content {
-            position: relative;
-            z-index: 2;
-        }
+    .transliteration {
+        font-style: italic;
+        color: #92400e;
+        font-weight: 600;
+        margin-bottom: 25px;
+        background: #fef3c7;
+        padding: 15px 20px;
+        border-radius: 15px;
+        box-shadow: inset 0 0 10px #d97706;
+    }
 
-        h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            color: #0a4d2e;
-            margin-bottom: 20px;
-            letter-spacing: 2px;
-            text-shadow: 0 2px 5px rgba(255, 215, 0, 0.3);
-            line-height: 1.3;
-        }
+    .message-box {
+        background: #bbf7d0;
+        color: #166534;
+        border-radius: 20px;
+        padding: 25px 20px;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        box-shadow: 0 8px 15px rgba(22, 101, 52,0.3);
+    }
 
-        .arabic {
-            font-size: 2.2rem;
-            color: #b8860b;
-            margin-bottom: 25px;
-            font-family: 'Times New Roman', 'Traditional Arabic', serif;
-            line-height: 1.6;
-            background: rgba(255, 215, 0, 0.1);
-            padding: 20px 25px;
-            border-radius: 100px;
-            display: inline-block;
-        }
+    .message-box span.emoji {
+        font-size: 20px;
+        margin: 0 4px;
+        vertical-align: middle;
+    }
 
-        .arabic span {
-            display: block;
-            font-size: 1.8rem;
-            color: #8b6508;
-            margin-top: 10px;
-        }
+    .cta-button {
+        display: inline-block;
+        background: linear-gradient(45deg, #fb923c, #f97316);
+        color: #064e3b;
+        font-weight: 700;
+        font-size: 18px;
+        padding: 15px 40px;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+        box-shadow: 0 8px 20px rgba(251,147,60,0.6);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none;
+        user-select: none;
+    }
 
-        .decor {
-            font-size: 4rem;
-            margin: 15px 0;
-            animation: gentleFloat 4s ease-in-out infinite;
-        }
+    .cta-button:hover, .cta-button:focus {
+        transform: scale(1.05);
+        box-shadow: 0 12px 30px rgba(251,147,60,0.9);
+        outline: none;
+    }
 
-        @keyframes gentleFloat {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
+    footer {
+        font-size: 14px;
+        color: #4b5563;
+        text-align: center;
+        margin-top: 20px;
+    }
 
-        .message {
-            background: rgba(10, 77, 46, 0.05);
-            border-radius: 40px;
-            padding: 35px;
-            margin: 30px 0;
-            font-size: 1.4rem;
-            line-height: 2;
-            color: #1e3a2f;
-            border-left: 5px solid #ffd700;
-            border-right: 5px solid #ffd700;
-        }
-
-        .message p {
-            margin: 12px 0;
-        }
-
-        .message .emote {
-            font-size: 2.5rem;
-            margin-top: 20px;
-        }
-
-        .btn-thr {
-            background: linear-gradient(145deg, #ffd700, #ff8c00);
-            color: #0a4d2e;
-            border: none;
-            padding: 25px 50px;
-            font-size: 2.2rem;
-            font-weight: 800;
-            border-radius: 100px;
-            cursor: pointer;
-            transition: 0.3s;
-            margin: 30px 0 20px;
-            box-shadow: 0 20px 30px rgba(255, 140, 0, 0.5);
-            animation: pulseGlow 1.8s infinite;
-            width: 100%;
-            max-width: 500px;
-            letter-spacing: 2px;
-        }
-
-        @keyframes pulseGlow {
-            0%, 100% { transform: scale(1); box-shadow: 0 20px 30px rgba(255, 140, 0, 0.5); }
-            50% { transform: scale(1.03); box-shadow: 0 30px 40px rgba(255, 140, 0, 0.8); }
-        }
-
-        .btn-thr:hover {
-            transform: scale(1.05);
-            background: linear-gradient(145deg, #ff8c00, #ffd700);
-        }
-
-        .btn-thr:active {
-            transform: scale(0.98);
-        }
-
-        .footer {
-            margin-top: 30px;
-            color: #777;
-            font-size: 1rem;
-            border-top: 2px dashed #ffd700;
-            padding-top: 20px;
-        }
-
-        .footer span {
-            color: #b8860b;
-            font-weight: bold;
-        }
-
-        /* Audio hidden */
-        audio {
-            display: none;
-        }
-
-        /* Responsive */
-        @media (max-width: 600px) {
-            .card { padding: 30px 20px; }
-            h1 { font-size: 2.2rem; }
-            .arabic { font-size: 1.6rem; }
-            .message { font-size: 1.2rem; padding: 20px; }
-            .btn-thr { font-size: 1.8rem; padding: 20px; }
-        }
-    </style>
+    footer .team {
+        color: #14b8a6;
+        font-weight: 700;
+    }
+</style>
 </head>
 <body>
-    <div class="card">
-        <div class="ketupat-ornament"></div>
-        <div class="ketupat-ornament ketupat-ornament2"></div>
-        
-        <div class="content">
-            <div class="decor">🌙✨🌙</div>
-            
-            <h1>✨ Selamat Idul Fitri 1446 H ✨</h1>
-            
-            <div class="arabic">
-                تَقَبَّلَ اللّهُ مِنَّا وَمِنكُمْ
-                <span>Taqabbalallahu minna wa minkum</span>
-            </div>
-            
-            <div class="message">
-                <p>🌺 Di hari yang suci ini,</p>
-                <p>mari kita saling memaafkan.</p>
-                <p>🤲 Mohon maaf lahir dan batin</p>
-                <p>atas segala khilaf dan salah.</p>
-                <div class="emote">😭❤️</div>
-            </div>
 
-            <button class="btn-thr" id="thrBtn">
-                ✨ KLIK DAPAT THR ✨
-            </button>
+<div class="card">
+    <div class="icon-moon-stars" aria-hidden="true">🌙✨🌙</div>
 
-            <div class="footer">
-                © <span>VoidTeam</span> • 1446 H / 2026 M
-            </div>
-        </div>
+    <h1>Selamat Idul Fitri 1446 H ✨</h1>
+
+    <div class="arabic-text" lang="ar" aria-label="Doa Taqabbalallahu minna wa minkum">
+        تَقَبَّلَ اللّٰهُ مِنّا وَمِنْكُمْ
+    </div>
+    <div class="transliteration" aria-label="Taqabbalallahu minna wa minkum">
+        Taqabbalallahu minna wa minkum
     </div>
 
-    <!-- Audio dengan berbagai format -->
-    <audio id="ramadhanSong" loop preload="auto" playsinline>
-        <!-- 🔴 GANTI DENGAN FILE LAGU LO -->
-        <source src="lagu_ramadhan.mp3" type="audio/mpeg">
-        <source src="lagu_ramadhan.ogg" type="audio/ogg">
-        Your browser does not support audio.
-    </audio>
+    <div class="message-box">
+        <span class="emoji" role="img" aria-label="Bunga">🌺</span> Di hari yang suci ini,<br />
+        mari kita saling memaafkan.<br /><br />
+        <span class="emoji" role="img" aria-label="Berdoa">🙏</span> Mohon maaf lahir dan batin<br />
+        atas segala khilaf dan salah.<br /><br />
+        <span class="emoji" role="img" aria-label="Tersedu dan hati">😭❤️</span>
+    </div>
 
-    <script>
-        // ========== AUTO PLAY LAGU AGGRESSIVE ==========
-        const audio = document.getElementById('ramadhanSong');
-        
-        function forcePlayAudio() {
-            audio.play()
-                .then(() => console.log('✅ Lagu diputar'))
-                .catch(err => {
-                    console.log('❌ Auto play gagal, coba cara lain');
-                    
-                    // Coba play pas user sentuh APAPUN di layar
-                    const playOnInteraction = function() {
-                        audio.play()
-                            .then(() => {
-                                console.log('✅ Lagu diputar setelah interaksi');
-                                document.removeEventListener('touchstart', playOnInteraction);
-                                document.removeEventListener('click', playOnInteraction);
-                            })
-                            .catch(() => {});
-                    };
-                    
-                    document.addEventListener('touchstart', playOnInteraction, { once: true });
-                    document.addEventListener('click', playOnInteraction, { once: true });
-                    
-                    // Tampilkan pesan kecil (opsional)
-                    const toast = document.createElement('div');
-                    toast.style.position = 'fixed';
-                    toast.style.bottom = '20px';
-                    toast.style.left = '50%';
-                    toast.style.transform = 'translateX(-50%)';
-                    toast.style.background = 'rgba(0,0,0,0.7)';
-                    toast.style.color = '#ffd700';
-                    toast.style.padding = '10px 20px';
-                    toast.style.borderRadius = '50px';
-                    toast.style.zIndex = '9999';
-                    toast.style.fontSize = '0.9rem';
-                    toast.innerText = '🔊 Tekan layar untuk musik';
-                    document.body.appendChild(toast);
-                    
-                    setTimeout(() => toast.remove(), 3000);
-                });
-        }
+    <a href="halaman2.html" class="cta-button" role="button" aria-label="Klik untuk dapat THR dan lanjut ke halaman kedua">
+        ✨ KLIK DAPAT THR ✨
+    </a>
 
-        // Coba auto play
-        forcePlayAudio();
+    <footer>
+        © <span class="team">VoidTeam</span> · 1446 H / 2026 M
+    </footer>
+</div>
 
-        // ========== PINDAH KE HALAMAN2 ==========
-        document.getElementById('thrBtn').addEventListener('click', function() {
-            // Fade out audio
-            audio.volume = 0;
-            window.location.href = 'halaman2.html';
-        });
+<audio id="background-music" src="lagu_ramadhan.mp3" autoplay loop controls style="margin-top: 20px; width: 100%; max-width: 400px; display:block; margin-left:auto; margin-right:auto;">
+    Your browser does not support the audio element.
+</audio>
 
-        // ========== LOCK BACK BUTTON ==========
-        history.pushState(null, null, location.href);
-        window.onpopstate = function () {
-            history.go(1);
-        };
-    </script>
 </body>
 </html>
