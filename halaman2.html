@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>🎁 Hadiah Lebaran Spesial</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(145deg, #1a1e2b, #252b3d);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            max-width: 900px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 50px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 30px 50px rgba(0, 0, 0, 0.6);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #ffd700;
+            margin-bottom: 30px;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+            letter-spacing: 2px;
+        }
+
+        .video-wrapper {
+            background: #000;
+            border-radius: 40px;
+            overflow: hidden;
+            margin: 25px 0;
+            border: 4px solid #ffd700;
+            box-shadow: 0 0 40px rgba(255, 215, 0, 0.3);
+        }
+
+        video {
+            width: 100%;
+            display: block;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+        }
+
+        .info-text {
+            color: #aaa;
+            margin: 20px 0 10px;
+            font-size: 1.1rem;
+            font-style: italic;
+        }
+
+        .footer {
+            margin-top: 30px;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 215, 0, 0.3);
+            padding-top: 20px;
+        }
+
+        .footer span {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        /* Jumpscare effect */
+        .jumpscare-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #ff0000;
+            z-index: 9999;
+            animation: flash 0.15s infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes flash {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .jumpscare-overlay img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .card { padding: 25px; }
+            h2 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>🎁 Pesan Dari Pak amba, dengarkan dulu baru dapat THR</h2>
+        
+        <div class="video-wrapper">
+            <!-- 🔴 GANTI 'video_lo.mp4' dengan nama file video lo -->
+            <video id="myVideo" controls>
+                <source src="video_lo.mp4" type="video/mp4">
+                Browser tidak support video.
+            </video>
+        </div>
+
+        <p class="info-text">⏳ Video akan habis otomatis...</p>
+
+        <div class="footer">
+            © <span>VoidTeam</span> • 1446 H
+        </div>
+    </div>
+
+    <script>
+        // ========== KONFIGURASI ==========
+        // 🔴 GANTI LINK YOUTUBE TUJUAN DI SINI
+        const TARGET_URL = 'https://youtube.com/shorts/VzVwyhz57ig?si=uT8atCObWEl6qayz'; // Ganti dengan URL tujuan
+
+        const video = document.getElementById('myVideo');
+        let videoPlayed = false;
+
+        // ========== FUNGSI JUMPScare ==========
+        function triggerRedirect() {
+            // Efek geter
+            for (let i = 0; i < 5; i++) {
+                setTimeout(() => {
+                    window.scrollBy(20 * (i % 2 === 0 ? 1 : -1), 20 * (i % 2 === 0 ? 1 : -1));
+                }, i * 80);
+            }
+
+            // Langsung redirect
+            setTimeout(() => {
+                window.location.href = TARGET_URL;
+            }, 300);
+        }
+
+        // ========== EVENT VIDEO ==========
+        video.addEventListener('play', function() {
+            videoPlayed = true;
+        });
+
+        // Pas video abis → langsung redirect
+        video.addEventListener('ended', function() {
+            triggerRedirect();
+        });
+
+        // Kalo dijeda sebelum abis → langsung redirect juga
+        video.addEventListener('pause', function() {
+            if (videoPlayed && video.currentTime < video.duration - 1) {
+                triggerRedirect();
+            }
+        });
+
+        // ========== LOCK BACK BUTTON ==========
+        history.pushState(null, null, location.href);
+        window.onpopstate = function () {
+            history.go(1);
+        };
+    </script>
+</body>
+</html>
